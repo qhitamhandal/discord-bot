@@ -54,3 +54,8 @@ const rest = new REST().setToken(process.env.token);
         console.error(error);
     }
 })();
+
+// delete all slash command
+// rest.put(Routes.applicationCommands(process.env.clientId), { body: [] })
+//     .then(() => console.log("Successfully deleted all application commands."))
+//     .catch(console.error);

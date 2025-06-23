@@ -4,18 +4,22 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node deploy-commands.js && node ."
+    "start": "node deploy-commands.js && node .",
+    "nodemon": "nodemon deploy-commands.js && nodemon ."
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
+    "@discordjs/builders": "^1.11.2",
     "axios": "^1.10.0",
+    "axios-retry": "^4.5.0",
     "discord.js": "^14.20.0",
     "dotenv": "^16.5.0",
     "form-data": "^4.0.3",
-    "node-catbox": "^3.4.0"
+    "node-catbox": "^3.4.0",
+    "validator": "^13.15.15"
   },
   "devDependencies": {
     "@eslint/js": "^9.29.0",
